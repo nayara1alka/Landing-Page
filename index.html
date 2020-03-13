@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Nayara Almeida" />
+        <title>White Yacht - Aluguel de Iates</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Parisienne|Source+Serif+Pro:400,700&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo.css" />
+    </head>
+    <body>
+        <header id="cabecalho">
+            <div class="cabecalhoLogIcon">
+                <div>
+                    <i class="fa fa-bars" onclick="btnIconeBars()"></i>
+                </div>                
+                <div id="logo">
+            
+                </div>       
+            </div>                        
+            <nav class="menu">
+                <i class="fa fa-window-close" onclick="btnIconeClose()"></i>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="#servicos" >Serviços</a></li>
+                    <li><a href="#acomodacoes" >Acomodações</a></li>
+                    <li><a href="#porqueNosEscolher" >Por que Nos Escolher</a></li>
+                    <li><a href="#depoimentos" >Depoimentos</a></li>
+                    <li><a href="#galeira" >Galeria</a></li>
+                    <li><a href="#contato" >Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="slider">
+            <div class="slider2">
+                <div class="sliderContImagem">
+                    <img src="img/barco1.png" />
+                    <div class="sliderTexto">
+                        <h2 class="titulo2">#1 Serviços de Aluguel de Iate </h2>
+                        <h2 class="tituloMaior">Os Melhores Iates</h2>
+                        <h1 class="tituloMenor">O WhiteSails é um local para quem procura contratar fretes de iate de alto nível.</h1>
+                        <button class="botao"><a  href="#">SAIBA MAIS</a></button>  
+                    </div>      
+                </div> 
+                <div class="sliderContImagem">
+                    <img src="img/barco2.png">     
+                    <div class="sliderTexto">
+                        <h2 class="titulo2">Uma variedade de fretes</h2>
+                        <h2 class="tituloMaior">Rotas Inspiradoras</h2>
+                        <h2 class="tituloMenor">Nossas locações e destinos podem satisfazer até os clientes mais exigentes.</h2>
+                        <button class="botao"><a href="#">SAIBA MAIS</a> </button> 
+                   </div>
+                </div>  
+            </div>    
+        </section>
+        <main id="servicos">
+            <h2 class="titulo2" >Nossos Serviços</h2>
+            <h2 class="titulo1">Oque Nós Oferecemos</h2>
+            <div class="contServicos">
+                    <figure class="filhosContServicos">
+                        <img src="img/barcoavela2.png"  alt="No mar com barco a vela"/>
+                        <figcaption class="filhosContServTex">
+                            <h3 class="titulo3">Rotas de Velas</h3>
+                            <p>Descubra as rotas de vela mais populares</p>
+                        </figcaption>          
+                        <button class="botao"><a  href="#">VEJA MAIS</a></button>
+                    </figure>
+                    <figure class="filhosContServicos">
+                       <img src="img/variosiates.png"  alt="Varios iates"/>
+                       <figcaption class="filhosContServTex">
+                            <h3 class="titulo3">Aluguel de Iates</h3>
+                            <p>Alugue qualquer um dos nossos confortáveis ​​iates.</p>
+                       </figcaption>   
+                       <button class="botao"><a href="#">VEJA MAIS</a></button>
+                    </figure>
+                    <figure class="filhosContServicos">
+                       <img  src="img/eventosnoiate.png"  alt="Festas e Eventos em Iates"/>
+                       <figcaption class="filhosContServTex">
+                            <h3 class="titulo3">Eventos e Atividades</h3>
+                            <p>Fretamentos para eventos corporativos</p>
+                       </figcaption>
+                       <button class="botao"><a  href="#">VEJA MAIS</a></button>
+                    </figure>   
+                <div class="botoesRadio">
+                    <input type="radio" id="radio1" name="grupoRadio" checked />
+                    <label  for="radio1" onclick="btnRadio1()"></label>
+
+                    <input type="radio" id="radio2" name="grupoRadio"  />
+                    <label  for="radio2" onclick="btnRadio2()"></label>
+
+                    <input type="radio" id="radio3" name="grupoRadio"  />
+                    <label  for="radio3" onclick="btnRadio3()"></label>
+                </div>
+            </div>
+        </main>
+        <section id="acomodacoes">
+            <div class="contAcomodocoes">
+                <div class="contAcomodacoes2"> 
+                    <div class="filhosAcomodacoes">
+                        <div class="acomodacoesSVG">
+                           <img src="img/cama.svg" alt="Cama de Iate" />
+                        </div>
+                        <h3 class="titulo3">Cama de Casal e TV</h3>
+                        <p>Todos os nossos iates estão confortavelmente mobilados com camas de 
+                        solteiro e casal e equipados com TV via satélite.</p>
+                    </div>
+                    <div class="filhosAcomodacoes">
+                         <div class="acomodacoesSVG">   
+                            <img src="img/ventilador.svg" alt="Élice de ventilador" />
+                         </div>   
+                         <h3 class="titulo3">Ar-Condicionado</h3>
+                         <p>Desfrute da sua viagem mesmo em clima muito quente, graças ao nosso 
+                         ar-condicionado de alto nível.</p> 
+                    </div>
+                </div> 
+                <div class="acomodacoesImg">  
+                    <div class="acomodacoesImg2">
+                        <img src="img/iateintenamente.png" alt="Iate Internamente" /> 
+                    </div>       
+                </div>
+                <div class="contAcomodacoes2">
+                    <div class="filhosAcomodacoes">  
+                        <div class="acomodacoesSVG">
+                           <img src="img/banheira.svg" alt="banheira" />
+                        </div>
+                        <h3 class="titulo3">Banheiros Espaçosos</h3>
+                        <p>Todos os nossos iates têm banheiros grandes, espaçosos, aconchegantes e
+                        elegantes, que permitem relaxar e se divertir.</p>
+                    </div>
+                    <div class="filhosAcomodacoes">
+                        <div class="acomodacoesSVG">
+                            <img src="img/cloche.svg" alt="Cloche" />
+                        </div>
+                        <h3 class="titulo3">Refeições</h3>
+                        <p>Servimos regularmente pratos orgânicos frescos e bebidas refrescantes 
+                        para uma melhor experiência culinária.</p>        
+                   </div>
+                </div>
+              </div>
+          </section>
+          <section id="numeros">
+            <div class="conteinerNumeros">
+                <div class="filhosContNum">
+                    <h2>245</h2>
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="50.658px" height="25" viewBox="0 0 290.658 290.658" style="enable-background:new 0 0 290.658 290.658;"
+                    xml:space="preserve">
+                    <g>
+                      <g>
+                        <rect y="139.474" style="fill:#ffffff;" width="300.658" height="13"/>
+                      </g>
+                   </g>
+                   </svg>
+                    <h2>Fretamentos por Mês</h2>
+                </div>
+                <div class="filhosContNum">
+                    <h2>182</h2>
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="50.658px" height="25" viewBox="0 0 290.658 290.658" style="enable-background:new 0 0 290.658 290.658;"
+                    xml:space="preserve">
+                    <g>
+                      <g>
+                        <rect y="139.474" style="fill:#ffffff;" width="300.658" height="13"/>
+                      </g>
+                   </g>
+                   </svg>
+                    <h2>Iates em Frota</h2>
+                </div>
+                <div class="filhosContNum">
+                    <h2>1590</h2>
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="50.658px" height="25" viewBox="0 0 290.658 290.658" style="enable-background:new 0 0 290.658 290.658;"
+                    xml:space="preserve">
+                    <g>
+                      <g>
+                        <rect y="139.474" style="fill:#ffffff;" width="300.658" height="13"/>
+                      </g>
+                   </g>
+                   </svg>
+                    <h2>Clientes Satisfeitos</h2>
+                </div>
+                <div class="filhosContNum">
+                    <h2>40</h2>
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="50.658px" height="25" viewBox="0 0 290.658 290.658" style="enable-background:new 0 0 290.658 290.658;"
+                    xml:space="preserve">
+                    <g>
+                      <g>
+                        <rect y="139.474" style="fill:#ffffff;" width="300.658" height="13"/>
+                      </g>
+                   </g>
+                   </svg>
+                    <h2>Membros da Equipe</h2>
+                </div>
+            </div>
+        </section>
+        <section id="porqueNosEscolher">
+            <div class="contPQNEscolher">   
+                <div class="contPQNEDescrever">
+                  <div class="contPQNEDescrever2">
+                    <h2 class="titulo2">Vantagens</h2>
+                    <h2 class="titulo1">Por que nos Escolher</h2>
+                    <div class="FilhosContPQNEDescrever">
+                        <div class="FCPQNEDIcones">
+                            <i id="iconeIMostrar1" class="fa fa-chevron-circle-down iconeMostrar" onclick="botaoAbrir1()"></i>
+                            <i id="iconeIOcultar1" class="fa fa-chevron-circle-up iconeOcultar" onclick="botaoFechar1()"></i>
+                            <h3 class="titulo4">Serviço de Alta Qualidade</h3>
+                        </div>       
+                        <hr/>
+                        <div id="fCPQNEDTexto1" class="fCPQNEDTexto">
+                           <p>Nossa frota fretada é composta por uma seleção de luxo de super
+                            iates de 5 estrelas, cuidadosamente selecionados para exceder as 
+                            expectativas de nossos clientes mais exigentes. Proporcionando uma
+                            visão além de apenas uma locação, nossos iates são esportivos, 
+                            elegantes e luxuosos, com grandes decks e interior requintado.</p>
+                        </div>
+                    </div>
+                    <div class="FilhosContPQNEDescrever">
+                        <div class="FCPQNEDIcones">
+                            <i id="iconeIMostrar2"  class="fa fa-chevron-circle-down iconeMostrar" onclick="botaoAbrir2()"></i>
+                            <i id="iconeIOcultar2" class="fa fa-chevron-circle-up iconeOcultar" onclick="botaoFechar2()"></i>
+                            <h3 class="titulo4">Abordagem Orientada para o Cliente</h3>
+                        </div>   
+                        <hr/>
+                        <div id="fCPQNEDTexto2" class="fCPQNEDTexto">
+                           <p>Consideramos pessoalmente todas as suas necessidades e perguntas
+                            exclusivas, para que você possa economizar tempo e obter taxas,
+                            disponibilidade e recomendações atuais de 100% dos principais 
+                            especialistas em planejamento de férias da América.</p>
+                        </div>
+                    </div>
+                    <div class="FilhosContPQNEDescrever">
+                        <div class="FCPQNEDIcones">
+                            <i id="iconeIMostrar3"  class="fa fa-chevron-circle-down iconeMostrar" onclick="botaoAbrir3()"></i>
+                            <i id="iconeIOcultar3" class="fa fa-chevron-circle-up iconeOcultar" onclick="botaoFechar3()"></i>
+                            <h3 class="titulo4">Iates de Primeira Linha</h3>
+                        </div>    
+                        <hr/>
+                        <div id="fCPQNEDTexto3" class="fCPQNEDTexto">
+                           <p>Nossa frota fretada é composta por uma seleção de luxo de super
+                            iates de 5 estrelas, cuidadosamente selecionados para exceder as 
+                            expectativas de nossos clientes mais exigentes. Proporcionando uma
+                             visão além de apenas uma carta, nossos iates são esportivos, 
+                             elegantes e luxuosos, com grandes decks e interior requintado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filhosPQNEImagens">
+                    <img src="img/pulandonomar .png" alt="Homem Pulando no mar" />       
+                </div>   
+              </div> 
+            </div>
+                <div class="contPQNExtra">
+                    <div class="filhosContPQNExtra">
+                        <img src="img/sol.svg" alt="Sol em SVG" />
+                        <div>
+                            <h2 class="titulo3">Lugares Impressionantes</h2>
+                            <p>Destinos exóticos e memoráveis</p>
+                        </div>            
+                    </div>
+                    <div  class="filhosContPQNExtra">
+                        <img src="img/iate.svg" alt="Iate em SVG" />
+                        <div>
+                            <h2 class="titulo3">Variedades de Iates</h2>
+                            <p>Uma ótima escolha de iates</p>
+                        </div>     
+                    </div>
+                    <div  class="filhosContPQNExtra">
+                        <img src="img/direcao.svg" alt="Iate em SVG" />
+                        <div>
+                            <h2 class="titulo3">Os Melhores Capitães</h2>
+                            <p>Profissionais absolutos</p>
+                        </div>       
+                    </div>        
+                </div> 
+        </section>
+        <section id="proximasRotas">
+            <h2 class="titulo2">Viaje Conosco</h2>
+            <h2 class="titulo1">Próximas Rotas</h2>
+            <div class="contProxRotas">
+                  <div class="proxRotContFilhos">
+                    <img src="img/imagem3.png" alt="Mediterrâneo" />
+                    <div class="proxRotContFTexto">
+                        <p>01/01/2040 - 01/01/2041</p>
+                        <h3 class="titulo3">Mediterrâneo</h3>
+                        <span class="corAzul"><p>R$400 / pessoa</p></span>
+                        <p>O Mediterrâneo tem muitas opções maravilhosas de cruzeiro. 
+                        Os destinos mais populares incluem aqueles com ...</p>
+                    </div>
+                  </div>
+                <div  class="proxRotContFilhos">
+                    <img src="img/imagem1  .png" alt="" />
+                    <div class="proxRotContFTexto">
+                        <p>01/01/2040 - 01/01/2041</p>
+                        <h3 class="titulo3">América do Norte</h3>
+                        <span class="corAzul"><p>R$400 / pessoa</p></span>
+                        <p>Não há necessidade de procurar seu passaporte;
+                         Os iate da América do Norte têm autorização ...</p>
+                    </div>
+                </div>
+                <div  class="proxRotContFilhos">
+                    <img src="img/imagem2.png" alt="" />
+                    <div class="proxRotContFTexto">
+                        <p>01/01/2040 - 01/01/2041</p>
+                        <h3 class="titulo3">Caribe</h3>
+                        <span class="corAzul"><p>R$400 / pessoa</p></span>
+                        <p>O Mar do Caribe e seu enorme círculo de ilhas vulcânicas
+                        será uma das melhores experiências de suas férias ...</p>
+                    </div>
+                </div>
+                <div class="botoesRadio">
+               
+                    <input type="radio" id="radio4" name="radioPrim2" checked/>
+                    <label for="radio4" onclick="botaoRadio4()"></label>
+    
+                    <input type="radio" id="radio5" name="radioPrim2"   />
+                    <label for="radio5" onclick="botaoRadio5()" ></label>
+    
+                    <input type="radio" id="radio6" name="radioPrim2"  />
+                    <label for="radio6" onclick="botaoRadio6()" ></label>
+    
+                </div>
+            </div>   
+        </section>
+        <section id="depoimentos">
+            <h2 class="titulo2">Depoimentos</h2>
+            <h2 class="titulo1">Oque Dizem Nossos Clientes</h2>
+            <div class="conteinerDepoimentos">
+               <div class="filhosContDep">
+                <p>Eu não posso acreditar que já faz uma semana desde que deixamos o barco.
+                    Tivemos uma semana adorável e ótimas lemranças, e eu só queria agradecer
+                    por toda sua ajuda e informações</p>
+                  <div class="contDepFotos">
+                    <div class="foto">
+                        <img src="img/cliente1.png" alt=""/>
+                    </div>
+                    <div>         
+                      <h4>Pietra Sophie</h4>
+                      <span class="corAzul"><p>cliente</p></span>
+                    </div> 
+                </div>
+               </div>
+               <div  class="filhosContDep">
+                  <p>Eu não posso acreditar que já faz uma semana desde que deixamos o barco.
+                   Tivemos uma semana adorável e ótimas lemranças, e eu só queria agradecer
+                   por toda sua ajuda e informações</p>
+                   <div class="contDepFotos">
+                    <div  class="foto">
+                        <img src="img/cliente2.png" alt=""/>
+                    </div>
+                    <div>             
+                       <h4>Alejandro Puentes</h4>
+                       <span class="corAzul"><p>cliente</p></span>
+                    </div> 
+                </div>
+               </div>
+               <div  class="filhosContDep">
+                  <p>Eu não posso acreditar que já faz uma semana desde que deixamos o barco.
+                  Tivemos uma semana adorável e ótimas lemranças, e eu só queria agradecer
+                  por toda sua ajuda e informações</p>
+                  <div class="contDepFotos">
+                    <div  class="foto">
+                        <img src="img/cliente3.png" alt=""/>
+                    </div>
+                    <div>            
+                       <h4>Alejandro Puentes</h4>
+                       <span class="corAzul"><p>cliente</p></span>
+                    </div> 
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="galeira">
+            <h2 class="titulo2">Galeria</h2>
+            <h2 class="titulo1">Iates em Destaque</h2>
+            <div class="contGaleira">
+                <div class="filhosGaleria">     
+                    <img src="img/iate01.png" alt="" />
+                </div>
+                <div class="filhosGaleria">     
+                    <img src="img/iate05.png" alt="" /> 
+                </div>
+                <div class="filhosGaleria">        
+                    <img src="img/iate02.png" alt="" />
+                </div>
+                <div class="filhosGaleria">    
+                    <img src="img/iate03.png" alt="" />     
+                </div>
+                <div class="filhosGaleria">    
+                    <img src="img/iate04.png" alt="" />   
+                </div>
+                <div class="filhosGaleria">        
+                    <img src="img/iate06.png" alt="" />         
+                </div>
+                <div class="filhosGaleria">       
+                    <img src="img/iate07.png" alt="" />      
+                </div>       
+            </div>
+        </section>
+        <section id="nossoTime">
+            <h2 class="titulo2">As Pessoas que estão por trás do nosso sucesso</h2>
+            <h2 class="titulo1">Conheça Nosso Time</h2>
+            <div class="contNossoTime">
+                <div class="filhosNossoTime">
+                    <img src="img/equipe3.png" alt="" />
+                    <div class="filhosNossoTime2">
+                    <h3 class="titulo3">Pietra Sophie</h3>
+                    <p>Pietra Sophie é a fundadora e diretora de nossa empresa de fretamento de iate.</p>
+                     </div> 
+                    <div class="iconesNT">
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-envelope-square"></i></a>
+                    </div>          
+                </div>
+                <div class="filhosNossoTime">
+                    <img src="img/equipe2.png" alt="" />
+                    <div class="filhosNossoTime2">
+                    <h3 class="titulo3" >Peter Clarck</h3>
+                    <p>Peter gerencia a frota de WhiteSails e cuida de nossos iates.</p>
+                    </div>
+                    <div class="iconesNT">
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-envelope-square"></i></a>
+                    </div>     
+                </div>
+                <div class="filhosNossoTime">
+                    <img src="img/equipe1.png" alt="" />
+                    <div class="filhosNossoTime2">
+                    <h3 class="titulo3">John Paul</h3>
+                    <p>John é responsável por todos os procedimentos contábeis da WhiteSails.</p>
+                    </div> 
+                    <div class="iconesNT">
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-envelope-square"></i></a>
+                    </div>     
+                </div>
+                <div class="filhosNossoTime">
+                    <img src="img/equipe2.png" alt="" />
+                    <div class="filhosNossoTime2">
+                    <h3 class="titulo3" >Sam Smith</h3>
+                    <p>Como nosso capitão, Sam garante a operação segura de nossos iates.</p>
+                    </div>
+                    <div class="iconesNT">
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-envelope-square"></i></a>
+                    </div>       
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h2 class="titulo2">Você está pronto?</h2>
+            <h2 class="titulo1">Entrar em Contato</h2>
+            <form id="formulario">
+                <input type="text" placeholder="Nome" required />
+                <input type="text" placeholder="Sobrenome" required />
+                <input type="tel" placeholder="Telefone" required />
+                <textarea placeholder="Mensagem"></textarea>
+                <button class="botaoForm" type="submit">ENVIAR MENSAGEM</button>         
+            </form>
+        </section>
+        <footer id="rodape">
+            <div class="contRodape1">
+                <div class="contRodapeGaleria1">
+                    <h2 class="titulo3">Galeria</h2>
+                    <div class="contRodapeGaleria2"> 
+                        <div class="filhosContGaleria2">
+                            <img src="img/iate01.png" alt=""/>
+                        </div>
+                        <div  class="filhosContGaleria2"> 
+                            <img src="img/iate02.png" alt=""/>
+                        </div>
+                        <div  class="filhosContGaleria2">
+                            <img src="img/iate03.png" alt=""/>
+                        </div>
+                        <div  class="filhosContGaleria2">
+                            <img src="img/iate04.png" alt=""/>
+                        </div>          
+                    </div>
+                </div>
+                <div class="navegacao">
+                    <h2 class="titulo3">Navegação</h2>
+                    <div class="contNavegacao">
+                        <div class="filhosNaveg">
+                            <p><a href="#">Destinos</a></p>
+                            <p><a href="#">Sobre Nós</a></p>
+                            <p><a href="#">Contato</a></p>
+                        </div>
+                        <div  class="filhosNaveg">
+                            <p><a href="#">Nosso Time</a></p>
+                            <p><a href="#">Serviços</a></p>
+                            <p><a href="#">Blog</a></p>
+                        </div>          
+                    </div>
+                </div>
+                <div class="entreContato">
+                    <h2 class="titulo3">Entre em Contato</h2>
+                    <div class="contEntrCont">
+                        <span class="iconeEC"><i class="fa fa-map-marker"></i></span>
+                        <p>5674 Street Sun,<br>
+                        Miami,Califórnia-EUA</p>
+                        <span class="iconeEC"><i class="fa fa-phone"></i></span>
+                        <p>(00)0 0000-0000</p>
+                        <span class="iconeEC"><i class="fa fa-envelope-square"></i></span>
+                        <p>whiteyacht@oi.org</p>
+                        <div class="contIconeEC">
+                            <span class="filhosIconeEC"><a href="#"><i class="fa fa-facebook-f"></i></a></span>
+                            <span class="filhosIconeEC"><a href="#"><i class="fa fa-twitter"></i></a></span>
+                            <span class="filhosIconeEC"><a href="#"><i class="fa fa-instagram"></i></a></span>
+                            <span class="filhosIconeEC"><a href="#"><i class="fa fa-google-plus"></i></a></span>
+                            <span class="filhosIconeEC"><a href="#"><i class="fa fa-skype"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <span class="dirAut"><p><i class="fa fa-copyright"></i>2020 WhiteYacht. Developed by Nayara Almeida</p></span>             
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

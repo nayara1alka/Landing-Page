@@ -1,0 +1,906 @@
+/*======RESET======*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-weight: 300;
+    font-family: 'PT Sans', sans-serif;
+    border: none;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background-color: #f4f5f5;
+}
+.titulo2{
+    font-family: 'Parisienne', cursive;
+    text-align: center;
+    color: #69c3cf;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.titulo1{
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    margin-bottom: 3%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.titulo3{
+    font-family: 'Source Serif Pro', serif;
+    text-align: center;
+    font-weight: bold;
+    margin:5px 0;
+    font-size: 1.1em;
+}
+.titulo4{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.1em;
+}
+/*=====INICIO CABECALHO=====*/
+#cabecalho{
+    width: 100%;
+    padding: 1% 3%;
+}
+.cabecalhoLogIcon{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+#logo{ 
+    background: url(../img/logo1.png)no-repeat ;
+    background-size: cover;
+    width: 104px;
+    height: 60px;
+}
+.fa-bars{
+    color: white;
+    cursor: pointer;
+    color: #69c3cf; 
+    font-size: 1.3em;  
+    margin-right: 10px;
+}
+.menu{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 195, 207,0.9);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 3;
+}
+.menu ul{
+    margin-left: 5px;
+    margin-top: 30px;
+    width: 100%;  
+}
+.menu li {
+    padding-bottom: 2%;
+}
+.menu li a{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+.fa-window-close{
+    color: white;
+    cursor: pointer;
+    font-size: 1.7em;  
+    margin-top: 40px;
+    margin-left: 5px;
+}
+/*=====FIM CABECALHO=====*/
+/*====INICIO SLIDER====*/
+#slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider2{
+    width: 200%;
+    display: flex;
+    animation-name: animacao;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;   
+}
+.sliderContImagem{
+    width: 100%;
+    position: relative;
+}
+.sliderContImagem img{
+    width: 100%;
+    filter: brightness(60%);
+}
+.sliderTexto{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    text-align: center;
+}
+.sliderTexto .titulo2{
+    font-size: 1.4em;
+    color: white;
+    font-weight: 300;
+}
+.tituloMaior{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2em;
+    color: white;
+}
+.tituloMenor{
+    font-size: 1em;
+    color: white;
+}
+.botao{
+    background-color: #69c3cf;
+    padding: 1% 3%;
+}
+.botao a{
+    font-size: 0.8em;
+    color: white;
+}
+.sliderContImagem:nth-child(1){
+
+}
+.sliderContImagem:nth-child(2){
+    animation-delay: 6s;
+}
+@keyframes animacao{
+    0%{
+        margin-left: 0%;
+    }
+    49.9%{
+        margin-left: 0%;
+    }
+    50%{
+        margin-left: -100%;
+    }
+    99%{
+        margin-left: -100%;
+    }
+    100%{
+       margin-left: -100%;
+    }    
+}
+/*===========FIM SLIDER=========*/
+/*=========INICIO SERVICOS======*/
+#servicos{
+    width: 100%;
+    padding: 5%;
+    background-color: white;
+}
+.contServicos{
+    width: 100%;
+}
+.filhosContServicos{
+    max-width: 350px;
+    text-align: center;
+    margin: 0 auto;
+}
+.filhosContServicos:nth-child(2){
+    display: none;
+}
+.filhosContServicos:nth-child(3){
+    display: none;
+}
+.filhosContServicos img{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(155, 150, 150);
+}
+.filhosContServTex{
+    width: 100%;
+    height: 70px;
+}
+.botoesRadio{
+    max-width: 350px;
+    text-align: center;
+    margin: 0 auto;
+}
+.botoesRadio input[type="radio"]{
+    display: none;
+}
+.botoesRadio input[type="radio"] + label{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(223, 221, 221);
+    cursor: pointer;
+    margin-top: 10px;
+}
+.botoesRadio input[type="radio"] + label:nth-child(4){
+    margin: 0 3px;
+}
+.botoesRadio input[type="radio"]:checked + label{
+    background-color: #69c3cf;
+}
+/*=========FIM SERVICOS======*/
+/*=========INICIO ACOMODACOES==========*/
+#acomodacoes{
+    width: 100%;
+    padding: 5%;
+}
+.contAcomodocoes{
+    width: 100%;
+}
+.contAcomodacoes2{
+    margin: 0 auto;
+    max-width: 350px;
+}
+.filhosAcomodacoes{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px; 
+}
+.filhosAcomodacoes:last-child{
+    margin-bottom: 0; 
+}
+.acomodacoesSVG{
+    width: 60px;
+    height: 60px;
+    background-color: #69c3cf;
+    margin: 0 auto;
+}
+.acomodacoesSVG img{
+    width: 40px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.acomodacoesImg{
+    max-width: 350px;
+    margin: 0 auto;
+}
+.acomodacoesImg2{
+    width: 100%;
+    margin: 15px 0;
+}
+.acomodacoesImg img{ 
+    width: 100%;
+    border: 17px solid #69c3cf;
+    border-radius: 50%; 
+}
+/*===========FIM ACOMODACOES===========*/
+/*===========INICIO NUMEROS==========*/
+#numeros{
+     background: url(../img/iate.jpg)no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     background-position: center;
+     background-color: #6992cf;
+     background-blend-mode: darken;
+}
+.conteinerNumeros{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.filhosContNum{
+    width: 50%;
+    color: white;
+    text-align: center;
+    padding: 5% 0;
+}
+.filhosContNum h2:first-child{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Source Serif Pro', serif;   
+}
+/*===========FIM NUMEROS==========*/
+/*===========INICIO PORQUE NOS ESCOLHER===========*/
+#porqueNosEscolher{
+    width: 100%;
+    padding: 5%;
+    background-color: white;
+}
+.contPQNEscolher{
+    width: 100%;
+}
+.contPQNEDescrever{
+    width: 100%;
+}
+.contPQNEDescrever2{
+    width: 100%;
+}
+.FilhosContPQNEDescrever{
+    width: 100%;
+    margin: 20px 0;
+}
+hr{
+    height: 1px;
+    background-color: rgb(138, 131, 131);
+    margin: 5px 0;
+}
+.FCPQNEDIcones{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.FCPQNEDIcones i{
+     color: #69c3cf;
+     font-size: 1.8em;
+     cursor: pointer;
+     margin-right: 15px;
+}
+.iconeOcultar{
+    display: none;
+}
+#iconeIOcultar1{
+    display: block;
+}
+#iconeIMostrar1{
+    display: none;
+}
+.fCPQNEDTexto{
+    width: 100%;
+}
+#fCPQNEDTexto2{
+    display: none;
+}
+#fCPQNEDTexto3{
+    display: none;
+}
+.filhosPQNEImagens{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.filhosPQNEImagens img{
+    width: 100%;
+}
+.contPQNExtra{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.filhosContPQNExtra{
+    width: 350px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(167, 163, 163);
+    margin-top: 20px;
+    padding: 0 1%;
+}
+.filhosContPQNExtra img{
+    width: 35px;
+    margin-right: 7px;
+}
+/*===========FIM PORQUE NOS ESCOLHER===========*/
+/*===========INICIO PROXIMAS ROTAS=============*/
+#proximasRotas{
+    width: 100%;
+    padding: 5%;
+}
+.contProxRotas{
+    width: 100%;
+}
+.proxRotContFilhos{
+    max-width: 350px;
+    margin: 0 auto;
+    display: none;
+    background-color: white;
+}
+.proxRotContFilhos:first-child{
+    display: block;
+}
+.proxRotContFilhos img{
+    width: 100%;
+}
+.proxRotContFTexto{
+    width: 100%;
+    height: 165px;
+    padding: 3%;
+}
+.proxRotContFTexto .titulo3{
+    text-align: left;
+}
+.corAzul{
+    color: #69c3cf;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.contProxRotas .botoesRadio{
+    padding-bottom: 7px;
+}
+/*===========FIM PROXIMAS ROTAS=============*/
+/*===========INICIO DEPOIMENTOS=============*/
+#depoimentos{
+    width: 100%;
+    padding: 5%;
+    background-color: white;
+    overflow: hidden;
+}
+.conteinerDepoimentos{
+    display: flex;
+    width:300%;
+    animation-name: animacao2;
+    -webkit-animation-name: animacao2 ;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-duration: 15s;
+    -webkit-animation-duration: 15s;
+}
+.conteinerDepoimentos:nth-child(1){
+   
+}
+.conteinerDepoimentos:nth-child(2){
+    animation-delay: 5s;
+}
+.conteinerDepoimentos:nth-child(3){
+    animation-delay: 10;
+}
+.filhosContDep{
+    width: 100%;
+    padding: 0px 3%;
+    margin: 0 auto;
+}
+.filhosContDep > p{
+    text-align: center;
+}
+@keyframes animacao2{
+    0%{
+        margin-left: 0%;
+    }
+    30%{
+        margin-left: 0%;
+    }
+    31%{
+        margin-left: -100%;
+    }
+    60%{
+        margin-left: -100%;
+    }
+    61%{
+        margin-left: -200%;
+
+    }
+    99%{
+        margin-left: -200%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+}
+.contDepFotos{
+    width: 100%;
+    text-align: center;
+}    
+.foto{
+    width: 80px;
+    margin: 0 auto;
+}
+/*===========FIM DEPOIMENTOS=============*/
+/*===========INICIO GALERIA==============*/
+#galeira{
+    width: 100%;
+    padding: 5%;
+}
+.contGaleira{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3px;
+}
+.filhosGaleria{
+    width: 100%;
+}
+.filhosGaleria img{
+    width: 100%;
+}
+/*===========FIM GALERIA==============*/
+/*===========INICIO NOSSO TIME========*/
+#nossoTime{
+    width: 100%;
+    padding: 5%;
+    background-color: white;
+}
+.contNossoTime{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.filhosNossoTime{
+    width: 80%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.filhosNossoTime2{
+    width: 100%;
+}
+.filhosNossoTime:last-child{
+    margin-bottom: 0;
+}
+.filhosNossoTime img{
+    width: 100%;
+}
+.iconesNT{
+    width: 100%;   
+}
+.iconesNT i{
+    color: black;
+    margin-right: 7px;
+}
+.iconesNT i:nth-child(4){
+    margin-right: 0;
+}
+/*===========FIM NOSSO TIME========*/
+/*===========INICIO CONTATO========*/
+#contato{
+    width: 100%;
+    padding: 5%;
+}
+#formulario{
+    width: 100%;
+}
+#formulario input{
+    width: 100%;
+    background-color: #f4f5f5;
+    border-bottom: 1px solid rgb(179, 174, 174);
+    margin-bottom: 20px;
+    padding: 1% 0;
+}
+#formulario textarea{
+    width: 100%;
+    background-color: #f4f5f5;
+    border-bottom: 1px solid rgb(179, 174, 174); 
+    margin-bottom: 20px;
+}
+.botaoForm{
+    background-color: #69c3cf;
+    color: white;
+   font-size: 0.9em;
+   padding: 1% 2%;
+   margin: 0 auto;
+   display: block;
+   cursor: pointer;
+}
+/*=============FIM CONTATO=========*/
+/*=============INICIO RODAPE=======*/
+#rodape{
+    width: 100%;
+    padding: 5% 5% 2% 5%;
+    background-color: rgb(72, 71, 76);
+    color: white;
+}
+.contRodape1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contRodapeGaleria1{
+    width: 270px;
+}
+#rodape .titulo3{
+    margin-bottom: 3%;
+}
+.contRodapeGaleria2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    row-gap: 5px;
+    column-gap: 10px;
+    justify-content: center;
+}
+.filhosContGaleria2{
+    width: 100%;
+}
+.filhosContGaleria2 img{
+    width: 100%;
+}
+.navegacao{
+    width: 270px;
+    margin: 25px 0;
+}
+.contNavegacao{
+    width: 100%;
+    display: flex;
+}
+.filhosNaveg{
+    width: 100%;
+}
+.filhosNaveg a{
+    color: #69c3cf;
+}
+.entreContato{
+    width: 270px;
+    text-align: center;
+}
+.contEntrCont{
+    width: 100%;
+}
+.iconeEC{
+    color: #69c3cf;
+    font-size: 1.1em;
+    display: block;
+    margin-top: 15px;
+}
+.iconeEC:first-child{
+    margin-top: 0;
+}
+.contIconeEC{
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.filhosIconeEC{
+    border: 1px solid white;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.filhosIconeEC:last-child{
+    margin-right: 0;
+}
+.filhosIconeEC a i{
+    color: #69c3cf;
+    font-size: 1.1em;
+    line-height: 2.3;
+}
+.dirAut{
+    text-align: center;
+}
+/*=============FIM RODAPE==========*/
+/*=============MEDIA QUERIES===========*/
+@media screen and (min-width:480px){
+    /*===========INICIO GALERIA==============*/
+    .contGaleira{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 4px;
+        column-gap: 10px;
+    }
+    .filhosGaleria:nth-child(2){
+        grid-column: 2;
+        grid-row: 1/3;    
+    }
+    .filhosGaleria:nth-child(6){
+        grid-column: 1/3; 
+    }
+    .filhosGaleria:nth-child(7){
+        grid-column: 3/5;
+        grid-row: 2/4;  
+    }
+/*===========FIM GALERIA==============*/
+}
+@media screen and (min-width:615px){
+    /*====INICIO SLIDER====*/
+.sliderTexto{
+    bottom: 15px;
+}
+.sliderTexto .titulo2{
+    font-size: 1.8em;
+}
+.tituloMaior{
+    font-size: 3em;
+}
+.tituloMenor{
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+/*===========FIM SLIDER=========*/
+/*===========INICIO NUMEROS==========*/
+.filhosContNum h2:first-child{
+   font-size: 2.5em;   
+}
+/*===========FIM NUMEROS==========*/
+/*===========INICIO NOSSO TIME========*/
+.filhosNossoTime{
+    width: 46%;
+}
+.filhosNossoTime:nth-child(3){
+    margin-bottom: 0;
+}
+/*===========FIM NOSSO TIME========*/
+.contRodape1{
+    justify-content: space-evenly;
+}
+.navegacao{
+    margin: 0;
+}
+}
+@media screen and (min-width:960px){
+    .titulo2{
+        font-size:1.7em ;
+    }
+    .titulo1{
+        font-size: 1.6em;
+    }
+    .titulo3{
+        font-size:1.3em ;
+    }
+    .titulo4{
+        font-size:1.3em ;
+    }
+    p{
+        font-size:1.1em ;
+    }
+    .corAzul{
+        font-size: 1.2em;
+    }
+    /*=====INICIO CABECALHO=====*/
+#cabecalho{
+    padding:2%;
+    position: absolute;
+    z-index: 2;
+}
+#logo{ 
+    background: url(../img/logo2.png)no-repeat ;
+    background-size: cover;
+    width: 120px;
+    height: 70px;
+    margin: 0 auto;
+}
+.fa-bars{
+   display: none;
+}
+.menu{
+    position: static;
+    display: block !important;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 1%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 15px 0;
+}
+.menu ul{
+    margin-left: 0;
+    margin-top: 0;
+    display: flex; 
+    justify-content: space-evenly;
+}
+.menu li {
+    padding-bottom: 0;
+}
+.menu li a{
+    font-size: 1.2em;
+}
+.fa-window-close{
+    display: none;
+}
+/*=====FIM CABECALHO=====*/
+/*====INICIO SLIDER====*/
+.sliderTexto .titulo2{
+    font-size: 2em;
+}
+.tituloMaior{
+    font-size: 4em;
+}
+.tituloMenor{
+    font-size: 1.2em;
+}
+.botao a{
+    font-size: 1em;
+}
+/*===========FIM SLIDER=========*/
+/*=========INICIO SERVICOS======*/
+.contServicos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.filhosContServicos:nth-child(2){
+    display: block !important;
+    margin: 0 15px;
+}
+.filhosContServicos:nth-child(3){
+    display: block !important;
+}
+.filhosContServTex{
+    height: 85px;
+}
+.botoesRadio{
+     display: none;
+}
+/*=========FIM SERVICOS======*/
+/*=========INICIO ACOMODACOES==========*/
+.contAcomodocoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*===========FIM ACOMODACOES===========*/
+/*===========INICIO NUMEROS==========*/
+.conteinerNumeros{
+   display: flex;
+   flex-wrap: wrap;
+}
+.filhosContNum{
+   width: 25%;
+}
+.filhosContNum h2:first-child{
+   font-size: 3.5em; 
+}
+.filhosContNum h2:last-child{
+    font-size: 1.2em;  
+ }
+#Capa_1{
+    height:35px;
+ }
+/*===========FIM NUMEROS==========*/
+/*===========INICIO PORQUE NOS ESCOLHER===========*/
+.contPQNEDescrever{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.contPQNEDescrever2{
+    width: 40%;
+    margin: 0 auto;
+}
+.contPQNExtra{
+    margin-top: 40px;
+}
+/*===========FIM PORQUE NOS ESCOLHER===========*/
+/*===========INICIO PROXIMAS ROTAS=============*/
+.contProxRotas{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.proxRotContFilhos{
+    display: block !important;
+}
+.proxRotContFilhos:nth-child(2){
+    margin: 0 10px;
+}
+.proxRotContFTexto{
+    height: 200px;
+}
+/*===========FIM PROXIMAS ROTAS=============*/
+/*===========INICIO NOSSO TIME========*/
+.filhosNossoTime{
+    width: 23%;
+    margin-bottom: 0;
+}
+.filhosNossoTime2{
+    width: 100%;  
+}
+/*===========FIM NOSSO TIME========*/
+/*===========INICIO CONTATO========*/
+#formulario input{
+    width: 30%;
+}
+#formulario input:nth-child(2){
+  margin: 0 4%;
+}
+#formulario input,textarea::placeholder{
+   font-size: 1.1em;
+}
+/*=============FIM CONTATO=========*/
+}
+@media screen and (min-width:1300px){
+    /*====INICIO SLIDER====*/
+.sliderTexto .titulo2{
+    font-size: 3.5em;
+}
+.tituloMaior{
+    font-size: 7em;
+}
+.tituloMenor{
+    font-size: 1.5em;
+}
+.botao a{
+    font-size: 1em;
+}
+/*===========FIM SLIDER=========*/
+
+}
+
+
